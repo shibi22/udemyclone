@@ -117,3 +117,47 @@ flex-wrap: wrap;
     margin: 20px;
     justify-content: space-between;
 }
+
+/* Hover effect for course cards */
+.course-card {
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode styles */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+}
+
+.dark-mode .navbar, .dark-mode .categories, .dark-mode .footer {
+    background-color: #333;
+    color: #f1f1f1;
+}
+
+.dark-mode .navbar__s2, .dark-mode .categories p {
+    background-color: #555;
+}
+
+.dark-mode .course-card {
+    background-color: #2c2c2c;
+}
+
+.dark-mode .navbar__s3 i, .dark-mode .footer__one p {
+    color: #f1f1f1;
+}
+
+/* Cart and Notification Animation */
+@keyframes pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+.pop-animation {
+    animation: pop 0.4s ease;
+}
