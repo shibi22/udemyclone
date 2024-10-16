@@ -1,3 +1,4 @@
+fa
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,37 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script>
-    // Search Feature
-    const searchInput = document.querySelector('.navbar__s2 input');
-    searchInput.addEventListener('keypress', function (event) {
-        if (event.key === 'Enter') {
-            console.log(`Searching for: ${searchInput.value}`);
-            alert(`Searching for: ${searchInput.value}`);
-        }
-    });
 
-    // Course Card Click
-    const courseCards = document.querySelectorAll('.course-card');
-    courseCards.forEach(card => {
-        card.addEventListener('click', function () {
-            const courseTitle = card.querySelector('h3').innerText;
-            alert(`You clicked on: ${courseTitle}`);
-        });
-    });
-
-    // Cart and Notification Icons
-    const cartIcon = document.querySelector('.fa-cart-shopping');
-    const notificationIcon = document.querySelector('.fa-bell');
-
-    cartIcon.addEventListener('click', function () {
-        alert('Your cart is currently empty!');
-    });
-
-    notificationIcon.addEventListener('click', function () {
-        alert('No new notifications.');
-    });
-</script>
 
 </head>
 
@@ -186,6 +157,37 @@
                     <p>&copy; Shibi, Inc</p>
             </div>
         </div>
+            <script>
+    // Search Feature
+    const searchInput = document.querySelector('.navbar__s2 input');
+    searchInput.addEventListener('keypress', function (event) {
+        if (event.key === 'Enter') {
+            console.log(`Searching for: ${searchInput.value}`);
+            alert(`Searching for: ${searchInput.value}`);
+        }
+    });
+
+    // Course Card Click
+    const courseCards = document.querySelectorAll('.course-card');
+    courseCards.forEach(card => {
+        card.addEventListener('click', function () {
+            const courseTitle = card.querySelector('h3').innerText;
+            alert(`You clicked on: ${courseTitle}`);
+        });
+    });
+
+    // Cart and Notification Icons
+    const cartIcon = document.querySelector('.fa-cart-shopping');
+    const notificationIcon = document.querySelector('.fa-bell');
+
+    cartIcon.addEventListener('click', function () {
+        alert('Your cart is currently empty!');
+    });
+
+    notificationIcon.addEventListener('click', function () {
+        alert('No new notifications.');
+    });
+</script>
 
 </body>
 
