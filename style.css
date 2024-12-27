@@ -161,3 +161,141 @@ body.dark-mode {
 .pop-animation {
     animation: pop 0.4s ease;
 }
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #003366;
+            color: white;
+        }
+
+        .navbar__s1__title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar__s2 input {
+            padding: 5px;
+            margin-left: 10px;
+            width: 200px;
+        }
+
+        .navbar__s3 {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar__s3 p {
+            margin-right: 15px;
+        }
+
+        /* Categories */
+        .categories {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #fff;
+            padding: 15px 0;
+            margin-top: 10px;
+        }
+
+        .categories p {
+            padding: 5px 10px;
+            font-weight: bold;
+            color: #003366;
+            cursor: pointer;
+        }
+
+        /* Course cards */
+        .course-card {
+            text-align: center;
+            padding: 15px;
+            background-color: #fff;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .course-card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        .footer__one {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .footer__two {
+            text-align: center;
+        }
+
+        /* Media queries for mobile responsiveness */
+        @media only screen and (max-width: 768px) {
+            .navbar__s2 input {
+                width: 100px;
+            }
+
+            .navbar__s3 {
+                display: none;
+            }
+
+            .categories {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .course-card {
+                width: 100%;
+            }
+
+            .recommended__container,
+            .popular__container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .footer__one {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar__s1__title {
+                font-size: 20px;
+            }
+
+            .categories {
+                font-size: 14px;
+            }
+
+            .footer__two h1 {
+                font-size: 24px;
+            }
+        }
